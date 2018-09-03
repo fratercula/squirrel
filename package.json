@@ -1,0 +1,30 @@
+{
+  "name": "squirrel",
+  "version": "0.1.0",
+  "description": "Data Swapper",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fratercula/squirrel.git"
+  },
+  "keywords": [
+    "swap",
+    "data",
+    "json"
+  ],
+  "author": "LoeiFy@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fratercula/squirrel/issues"
+  },
+  "homepage": "https://github.com/fratercula/squirrel#readme",
+  "devDependencies": {
+    "bili": "^3.1.2",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
