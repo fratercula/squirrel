@@ -1,4 +1,4 @@
-import clone from './clone'
+import clone from './clone.js'
 
 function swapper(target, unique, data) {
   const o = clone(target)
