@@ -11,19 +11,20 @@ function swapper(target, unique, data) {
     const useOrigin = data === undefined
 
     if (Array.isArray(current)) {
+      delete o[key]
       o[field] = current.map(item => swapper(item, unique, data))
       return
     }
 
     if ((type === 'object' && !exist) || (type === 'object' && useOrigin)) {
-      o[field] = swapper(current, unique, data)
       delete o[key]
+      o[field] = swapper(current, unique, data)
       return
     }
 
     if (exist) {
-      o[field] = useOrigin ? current : data
       delete o[key]
+      o[field] = useOrigin ? current : data
     }
   })
 

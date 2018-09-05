@@ -1,4 +1,4 @@
-import swapper from '../src/index.js'
+import Squirrel from '../src/index.js'
 
 const a = {
   't|ui1': 'a',
@@ -9,9 +9,18 @@ const a = {
   ],
   'c|ui1': {
     'd|ui1': true,
+    's|ui0': [
+      {
+        'f|ui0': 3,
+      },
+    ],
   },
   s: 'a',
+  'test|ui0': false,
 }
 
-console.log(swapper(a, 'ui1'))
-console.log(swapper(a, 'ui1', 'sss'))
+const data = new Squirrel(a, 'ui1', 'ui0')
+
+console.log(JSON.stringify(a, null, 2))
+console.log(JSON.stringify(data.value, null, 2))
+console.log(JSON.stringify(data.swap({ ui0: '????' }), null, 2))
