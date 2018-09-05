@@ -1,4 +1,4 @@
-import clone from './clone.js'
+const clone = require('./clone')
 
 function swapper(target, unique, data) {
   const o = clone(target)
@@ -31,4 +31,4 @@ function swapper(target, unique, data) {
   return o
 }
 
-export default swapper
+module.exports = swapper

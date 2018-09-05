@@ -1,4 +1,4 @@
-import Squirrel from '../src/index.js'
+const Squirrel = require('../src/index')
 
 const a = {
   't|ui1': 'a',
@@ -21,6 +21,6 @@ const a = {
 
 const data = new Squirrel(a, 'ui1', 'ui0')
 
-console.log(JSON.stringify(a, null, 2))
-console.log(JSON.stringify(data.value, null, 2))
-console.log(JSON.stringify(data.swap({ ui0: '????' }), null, 2))
+console.log(a)
+console.log(data.value)
+console.log(data.swap({ ui0: '????' }))

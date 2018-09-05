@@ -1,7 +1,7 @@
-import swapper from './helper/swap.js'
-import clone from './helper/clone.js'
+const swapper = require('./helper/swap')
+const clone = require('./helper/clone')
 
-export default class {
+module.exports = class {
   constructor(data, ...uniques) {
     this.data = data
     this.uniques = uniques

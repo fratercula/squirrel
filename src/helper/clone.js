@@ -1,3 +1,1 @@
-export default function (o) {
-  return JSON.parse(JSON.stringify(o))
-}
+module.exports = o => JSON.parse(JSON.stringify(o))
