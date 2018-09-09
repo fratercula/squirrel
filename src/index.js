@@ -1,10 +1,11 @@
 const swapper = require('./helper/swap')
 const clone = require('./helper/clone')
+const uniques = require('./helper/uniques')
 
 module.exports = class {
-  constructor(data, ...uniques) {
+  constructor(data, separator = '|') {
     this.data = data
-    this.uniques = uniques
+    this.uniques = uniques(data, separator)
   }
 
   get value() {

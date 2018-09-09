@@ -19,7 +19,7 @@ const a = {
   'test|ui0': false,
 }
 
-const data = new Squirrel(a, 'ui1', 'ui0')
+const data = new Squirrel(a)
 
 console.log(a)
 console.log(data.value)
