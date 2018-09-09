@@ -5,6 +5,7 @@ const uniques = require('./helper/uniques')
 module.exports = class {
   constructor(data, separator = '|') {
     this.data = data
+    this.separator = separator
     this.uniques = uniques(data, separator)
   }
 
@@ -17,7 +18,7 @@ module.exports = class {
 
     for (let i = 0; i < this.uniques.length; i += 1) {
       const key = this.uniques[i]
-      data = swapper(data, key, target[key])
+      data = swapper(data, key, target[key], this.separator)
     }
 
     return data
