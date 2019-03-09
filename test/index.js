@@ -1,25 +1,25 @@
-const Squirrel = require('../src/index')
+const Squirrel = require('../src')
 
 const a = {
-  't@ui1': 'a',
+  't|ui1': 'a',
   b: [
     {
-      'a@ui1': 1,
+      'a|ui1': 1,
     },
   ],
-  'c@ui1': {
-    'd@ui1': true,
-    's@ui0': [
+  'c|ui1': {
+    'd|ui1': true,
+    's|ui0': [
       {
-        'f@ui0': 3,
+        'f|ui0': 3,
       },
     ],
   },
   s: 'a',
-  'test@ui0': false,
+  'test|ui0': false,
 }
 
-const data = new Squirrel(a, '@')
+const data = new Squirrel(a)
 
 console.log(a)
 console.log(data.value)

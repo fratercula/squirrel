@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Data Swapper",
   "main": "lib/index.js",
+  "unpkg": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
+    "test": "node test/index.js",
     "build": "babel src -d lib"
   },
   "repository": {
@@ -16,18 +18,18 @@
     "data",
     "json"
   ],
-  "author": "LoeiFy@gmail.com",
+  "author": "LoeiFy <LoeiFy@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fratercula/squirrel/issues"
   },
   "homepage": "https://github.com/fratercula/squirrel#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.5.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "eslint": "^5.15.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.16.0"
   }
 }
