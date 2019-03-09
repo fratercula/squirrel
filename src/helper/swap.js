@@ -7,7 +7,7 @@ function swapper(target, unique, data, separator) {
     const current = o[key]
     const type = typeof current
     const field = key.split(separator + unique)[0]
-    const exist = key.indexOf(separator + unique) > -1
+    const exist = key.includes(separator + unique)
     const useOrigin = data === undefined
 
     if (Array.isArray(current)) {

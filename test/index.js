@@ -1,26 +1,29 @@
 const Squirrel = require('../src')
 
 const a = {
-  't|ui1': 'a',
+  'a|ui1': 'a',
   b: [
     {
-      'a|ui1': 1,
+      'ba|ui1': 1,
     },
+    'bb|ss',
   ],
   'c|ui1': {
-    'd|ui1': true,
-    's|ui0': [
+    'ca|ui2': true,
+    'cb|ui0': [
       {
-        'f|ui0': 3,
+        'cba|ui0': 3,
       },
     ],
   },
-  s: 'a',
-  'test|ui0': false,
+  d: 'a',
+  'e|ui0': false,
+  'f|ui2': {
+    'fa|ui2': 'ss',
+  },
 }
 
 const data = new Squirrel(a)
 
-console.log(a)
-console.log(data.value)
-console.log(data.swap({ ui0: '????' }))
+console.log(JSON.stringify(data.value, null, 2))
+console.log(JSON.stringify(data.swap({ ui0: '????', ui2: '----' }), null, 2))
