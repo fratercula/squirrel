@@ -4,6 +4,9 @@
   "description": "Data Swapper",
   "main": "lib/index.js",
   "unpkg": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint .",
     "test": "node test/index.js",
