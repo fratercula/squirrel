@@ -1,5 +1,5 @@
 {
-  "name": "squirrel",
+  "name": "@fratercula/squirrel",
   "version": "0.1.0",
   "description": "Data Swapper",
   "main": "lib/index.js",
