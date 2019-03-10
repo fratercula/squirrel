@@ -12,6 +12,12 @@ function swapper(target, unique, data, separator) {
 
     if (Array.isArray(current)) {
       delete o[key]
+
+      if (exist) {
+        o[field] = useOrigin ? current : data
+        return
+      }
+
       o[field] = current.map(item => swapper(item, unique, data, separator))
       return
     }
